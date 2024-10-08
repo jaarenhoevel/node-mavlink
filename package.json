@@ -22,7 +22,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "mavlink-mappings": "git://github.com/jaarenhoevel/node-mavlink-mappings.git"
+    "mavlink-mappings": "git://github.com/jaarenhoevel/node-mavlink-mappings.git#master"
   },
   "scripts": {
     "clean": "rm -rf dist lib/*.js",
@@ -32,7 +32,8 @@
     "dev": "jest --watch",
     "test:e2e": "./main.js e2e --input data.mavlink",
     "sanity-check": "./sanity-check.cjs && ./sanity-check.mjs",
-    "prepublishOnly": "npm run clean && npm install && npm test && npm run build && npm run sanity-check"
+    "prepublishOnly": "npm run clean && npm install && npm test && npm run build && npm run sanity-check",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",

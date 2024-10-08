@@ -22,7 +22,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "mavlink-mappings": "^1.0.20-20240131-0"
+    "mavlink-mappings": "git://github.com/jaarenhoevel/node-mavlink-mappings.git"
   },
   "scripts": {
     "clean": "rm -rf dist lib/*.js",
